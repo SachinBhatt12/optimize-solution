@@ -50,7 +50,7 @@ jobs:
         run: unzip -q release.zip
 
       - name: Copy To Server
-        uses: appleboy/scp-action
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.WINDOWS_SERVER_ADDRESS }}
           username: ${{ secrets.WINDOWS_SERVER_USERNAME }}
